@@ -1,0 +1,25 @@
+{
+  "name": "fk",
+  "displayName": "Franky Language Support",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "franky",
+      "aliases": ["Franky", "franky"],
+      "extensions": [".fk",".franky"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "franky",
+      "scopeName": "index.fk",
+      "path": "./syntaxes/franky.tmLanguage.json"
+    }]
+  }
+}
